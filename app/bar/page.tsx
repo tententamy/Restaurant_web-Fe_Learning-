@@ -112,6 +112,7 @@ export default function BarPage() {
             <BlogCheckin/>
           </div>
       </div>
+       <DeviderPage type="without-logo" />
     </div>
       
   );
