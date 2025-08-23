@@ -4,7 +4,7 @@ import Image from "next/image";
 function BlogCheckin() {
   return (
     <div className="flex flex-col gap-[24px] max-w-[270px] p-2">
-        <Image src={pngs.cafe1} alt="thumnail" className="rounded-t-full"/>
+        <Image src={pngs.cafe1} alt="thumnail" className="rounded-t-full h-[300px]"/>
         <div className="flex flex-col items-start gap-[10px]">
         <p className="text-[16px] font-normal text-[#969493] uppercase">
           16 Apr 2021

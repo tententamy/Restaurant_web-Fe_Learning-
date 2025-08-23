@@ -2,6 +2,8 @@ import DeviderPage from "@/components/devider";
 import DishLayout from "@/components/foodSession";
 import BlogCheckin from "@/components/blogCheckin";
 import ButtonNavigator from "@/components/buttonNavigator";
+import HeaderSection from "@/components/headerSections";
+import Image from "next/image";
 import {pngs} from "@/public/images"
 
 export default function BarPage() {
@@ -34,22 +36,81 @@ export default function BarPage() {
           />
         ))}
         <DeviderPage/>
+        
         <div className="container mx-auto mt-[70px]">
-        <div className="flex flex-col gap-[24px] items-center justify-center">
-          {/* <HeaderSection
-            title="Weekend Suggestion"
-            description="During the weekend at Café Regina you can treat yourself to a delicious hot meal that is prepared with a lot of care and love. Our chef gets to work and conjures up traditional Flemish classics that will delight your taste buds. So be sure to drop by or contact this business! "
+          <div className="relative min-h-[900px]">
+          <div className="flex flex-col gap-[24px] items-center justify-center">
+            <HeaderSection
+              title="Weekend Suggestion"
+              description="During the weekend at Café Regina you can treat yourself to a delicious hot meal that is prepared with a lot of care and love. Our chef gets to work and conjures up traditional Flemish classics that will delight your taste buds. So be sure to drop by or contact this business! "
+              position="center"
+              width="w-[50%]"
+            />
+            <ButtonNavigator label="Read more" />
+          </div>
+          <div>
+            <Image
+              src={pngs.drink1}
+              alt="food"
+              width={500}
+              height={500}
+              className="w-[257px] h-[391px] rounded-t-[160px] absolute left-0 rotate-[-16deg] object-cover"
+            />
+            <Image
+              src={pngs.drink2}
+              alt="food"
+              width={500}
+              height={500}
+              className="w-[212px] h-[297px] rounded-t-[160px] absolute left-[255px] top-[380px] rotate-[-6deg] object-cover"
+            />
+            <Image
+              src={pngs.drink3}
+              alt="food"
+              width={500}
+              height={500}
+              className="max-w-[270px] max-h-[392px] rounded-t-[160px] absolute left-[450px] top-[450px] rotate-[-11deg] object-cover"
+            />
+            <Image
+              src={pngs.food3}
+              alt="food"
+              width={500}
+              height={500}
+              className="w-[239px] min-h-[336px] rounded-t-[160px] absolute right-[-50px] rotate-[5deg] object-cover"
+            />
+            <Image
+              src={pngs.food2}
+              alt="food"
+              width={500}
+              height={500}
+              className="w-[239px] h-[335px] rounded-t-[160px] absolute right-[175px] top-[380px] rotate-[3deg] object-cover"
+            />
+            <Image
+              src={pngs.food1}
+              alt="food"
+              width={500}
+              height={500}
+              className="w-[258px] min-h-[362px] rounded-t-[160px] absolute right-[400px] top-[480px] rotate-[11deg] object-cover"
+            />
+          </div>
+        </div>
+          <div className="flex flex-col gap-[24px] items-center justify-center">
+            <HeaderSection
+              title="Events"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type. "
             position="center"
             width="w-[50%]"
-          /> */}
-          <ButtonNavigator/>
-        </div>
-        <div className="flex items-center gap-[20px] mt-[63px]">
-           <BlogCheckin/>
-           <BlogCheckin/>
-           <BlogCheckin/>
-           <BlogCheckin/>
-        </div>
+            />
+          </div>
+          <div className="flex gap-[6px] items-center justify-center">
+            <ButtonNavigator className="rotate-180" />
+            <ButtonNavigator />
+          </div>
+          <div className="flex items-center gap-[20px] mt-[63px]">
+            <BlogCheckin/>
+            <BlogCheckin/>
+            <BlogCheckin/>
+            <BlogCheckin/>
+          </div>
       </div>
     </div>
       

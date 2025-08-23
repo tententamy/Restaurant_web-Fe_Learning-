@@ -32,7 +32,7 @@ export default function DishLayout({ name, description, image, menuItems }: Dish
               <li key={index}>{item}</li>
             ))}
           </ul>
-          <ButtonNavigator/>
+          <ButtonNavigator label="All Menu"/>
         </div>
       </div>
             
