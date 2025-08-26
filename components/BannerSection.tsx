@@ -18,10 +18,10 @@ export default function BannerSection() {
               Regina
             </h3>
             <div>
-              <p className="text-[24px] font-normal text-white">
+              <p className="text-[18px] font-normal text-white">
                 GROTE MARKT 15
               </p>
-              <p className="text-[24px] font-normal text-[#969493]">
+              <p className="text-[18px] font-normal text-[#969493]">
                 9060 ZELZATE
               </p>
             </div>

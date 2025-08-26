@@ -20,10 +20,15 @@ import gallery1 from "./gallery1.jpg"
 import gallery2 from "./gallery2.jpg"
 import gallery3 from "./gallery3.jpg"
 import gallery4 from "./gallery4.jpg"
+import twitter from "./twitter.svg"
+import fb from "./fb.svg"
+import instagram from "./instagram.svg"
+import line from "./line.svg"
 
 export const pngs = {
   banner1, mainBanner, banner2,
   arrow,
+  line,
   chips,
   drinks,
   logo,
@@ -31,4 +36,6 @@ export const pngs = {
   drink1,drink2,drink3,
   food1,food2,food3,
   gallery1,gallery2,gallery3,gallery4,
+  fb,twitter,instagram,
+
 };
