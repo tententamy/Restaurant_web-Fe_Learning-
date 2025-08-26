@@ -1,10 +1,14 @@
-import {pngs} from "@/public/images/index"
 import Image from "next/image";
+import { StaticImageData } from "next/image";
 
-function BlogCheckin() {
+interface BlogCheckinProps {
+  image : string | StaticImageData
+}
+
+function BlogCheckin({image}: BlogCheckinProps) {
   return (
     <div className="flex flex-col gap-[24px] max-w-[270px] p-2">
-        <Image src={pngs.cafe1} alt="thumnail" className="rounded-t-full h-[300px]"/>
+        <Image src={image} alt="thumnail" className="rounded-t-full h-[300px]"/>
         <div className="flex flex-col items-start gap-[10px]">
         <p className="text-[16px] font-normal text-[#969493] uppercase">
           16 Apr 2021

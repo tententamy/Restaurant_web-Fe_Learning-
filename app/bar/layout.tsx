@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {pngs} from "@/public/images";
 
 
 export default function BarLayout({
@@ -13,7 +14,7 @@ export default function BarLayout({
       <nav className="flex items-center justify-between fixed top-0 left-0 w-full bg-[#040404] px-8 py-4 text-[#969493] z-50">
             {/* Logo bên trái */}
             <div className="flex items-center">
-                <Image src="/images/logo.png" alt="Logo" width={100} height={100} className="ml-10" />
+                <Image src={pngs.logo} alt="Logo" width={100} height={100} className="ml-10" />
             </div>
 
             {/* Menu bên phải */}   
